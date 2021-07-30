@@ -1,0 +1,104 @@
+score = 0
+print("Welcome to my computer quiz!")
+
+def my_function():
+    score = 0
+    print("Python strings have a property called “immutability.” What does this mean?")
+    answer1 = input("a-Strings in Python can’t be changed or b-Strings can’t be divided by numbers or c-trings in Python can be represented as arrays of chars ")
+    if answer1.lower() == "a":
+        print('Correct!')
+       # score += 1
+        score += 1
+    else:
+        print("Incorrect!")
+    print('str1 = "my isname isisis jameis isis bond"')
+    print('sub = "is"')
+    print('print(str1.count(sub, 4))')
+    answer2 = input("the output is: 4 or 5 or 6 ")
+    if answer2.lower() == "6":
+        print('Correct!')
+       # score += 1
+        score += 1
+    else:
+        print("Incorrect!")
+    print("def add(a, b):")
+    print("    return a+5, b+5")
+    print("result = add(3, 2)")
+    print("print(result)")
+    answer3 = input("the output is : 15 or (8,7) or Syntax Error ")
+    if answer3.lower() == "(8,7)":
+        print('Correct!')
+      #  score += 1
+        score += 1
+    else:
+        print("Incorrect!")
+    print('str1 = "PYnative"')
+    print('print(str1[1:4], str1[:5], str1[4:], str1[0:-1], str1[:-1])')
+    answer4 = input("the output is: a-PYn PYnat ive PYnativ vitanYP or b-Yna PYnat tive PYnativ vitanYP or c-Yna PYnat tive PYnativ PYnativ ")
+    if answer4.lower() == "c":
+        print('Correct!')
+      #  score += 1
+        score += 1
+    else:
+        print("Incorrect!")
+
+    print("You got " + str(score) + " questions correct!")
+    print("You got " + str((score / 4) * 100) + "%.")  
+    if score == 0 or score == 1 :
+        print("study harder and try again")
+    elif score == 2:
+        print("not bad! study harder and you will be better")
+    elif score == 3 or 4: 
+        print("good job!")
+
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :)") 
+
+Q = input("are a beginer? ")
+if Q.lower() == "yes":
+    print("if you want to specify the data type of a variable ")
+    answer5 = input("what you should use to get 3.0 (str(3) or int(3) or float(3)? ) ")
+    if answer5.lower() == "float(3)":
+        print('Correct!')
+        score += 1
+    else:
+        print("Incorrect!")
+    print('import datetime - x = datetime.datetime.now() - print(x.strftime("%A"))')   
+    answer6 = input('what is the result ? (year or month or day) ')
+    if answer6.lower() == "day":
+        print('Correct!')
+        score += 1
+    else:
+        print("Incorrect!")
+    print ("A while loop in Python is used for what type of iteration?")
+    answer7 = input("definite or indefinite or indeterminate ")
+    if answer7.lower() == "indefinite":
+        print('Correct!')
+        score += 1
+    else:
+        print("Incorrect!")
+    print("Which of the following statements assigns the value 100 to the variable x in Python:")
+    answer8 = input("x << 100 or x := 100 or x = 100 ")
+    if answer8.lower() == "x = 100":
+        print('Correct!')
+        score += 1
+    else:
+        print("Incorrect!")
+
+    print("You got " + str(score) + " questions correct!")
+    print("You got " + str((score / 4) * 100) + "%.")
+    if score == 3 or score == 4:
+        x = input("you want try level 2? ")
+        if x.lower() == "yes":
+            my_function()
+    elif score == 0 or score == 1:
+        print("study harder and try again") 
+    elif score == 2:
+        print("not bad! study harder and you will be better")
+if Q.lower() == "no" or "non":
+    my_function()
